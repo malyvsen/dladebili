@@ -5,11 +5,65 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>dladebili.pl</title>
+    <style>
+        body {
+            min-height: 100vh;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background: linear-gradient(135deg, #f8fafc 0%, #e0e7ef 100%);
+            font-family: 'Segoe UI', 'Roboto', Arial, sans-serif;
+            color: #222;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5em;
+            color: #2d3748;
+            letter-spacing: 1px;
+        }
+
+        p {
+            font-size: 1.25rem;
+            margin: 0.5em 0;
+        }
+
+        .price {
+            font-weight: bold;
+            color: #2563eb;
+            font-size: 1.5rem;
+        }
+
+        a {
+            color: #10b981;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+
+        a:hover {
+            color: #059669;
+            text-decoration: underline;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 1.5rem;
+            }
+
+            p,
+            .price {
+                font-size: 1rem;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <h1>dladebili.pl jest na sprzedaż</h1>
-    <p>Cena: 5k PLN (do negocjacji)</p>
+    <p class="price">Cena: 5000 złotych (do negocjacji)</p>
     <p>Kontakt: <a href="mailto:dladebili@proton.me">dladebili@proton.me</a></p>
 </body>
 
